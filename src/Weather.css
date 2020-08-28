@@ -1,0 +1,25 @@
+
+.temp{
+    background-color: rgba(0, 0, 0, 0.39);
+    border-radius:15px ;
+    box-shadow: black;
+    filter:drop-shadow(6px 7px 16px black);
+    width: 50%;
+    height: 25%;
+   
+    margin: auto;
+    padding: 22px 30px 12px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+}
+
+.max-min{
+ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 2px;
+    justify-content: space-evenly;
+}
