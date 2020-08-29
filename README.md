@@ -13,7 +13,7 @@ The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
 ### `LIVE ON`
-    https://codebloded.github.io/weather-app
+    [https://codebloded.github.io/weather-app]
 
 
 ### `npm test`
