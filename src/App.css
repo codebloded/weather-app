@@ -33,6 +33,7 @@
   width: 39%;
   margin: 7px 45px;
   font-size:20px;
+  font-weight: bold;
   border:none ;
   border-bottom: 2px solid white;
 
@@ -57,4 +58,10 @@
 .btn:hover{
  background:green;
  cursor: pointer;
+}
+span {
+  margin: auto;
+  padding: 4px;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
 }

@@ -16,7 +16,7 @@ const App = () => {
   const [dec, setDec] = useState();
   const [Temp, setTemp] = useState();
   const [weather, setWeather] = useState({
-    Thunderstrom: 'wi wi-thunderstrom',
+    Thunderstorm: 'wi wi-thunderstorm',
     Drizzle: 'wi wi-sleet',
     Rain: 'wi wi-storm-showers',
     Snow: "wi wi-snow",
@@ -29,7 +29,7 @@ const App = () => {
 
 
   useEffect(() => {
-    const response = fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city, country}&appid=${API_KEY}`)
+     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city, country}&appid=${API_KEY}`)
       .then((res) => {
         return res.json()
       }).then((data) => {
@@ -46,8 +46,8 @@ const App = () => {
               setIcons(weather.Clouds);
               break;
 
-            case data.weather[0].main === "Thunderstrom":
-              setIcons(weather.Thunderstrom);
+            case data.weather[0].main === "Thunderstorm":
+              setIcons(weather.Thunderstorm);
               break;
             case data.weather[0].main === "Drizzle":
               setIcons(weather.Drizzle);
@@ -100,7 +100,7 @@ const App = () => {
           }}>
 
 
-            <input type="text" placeholder="Enter City" onChange={countryHandler} value={country} defaultValue='' />
+            <input type="text" placeholder="Enter country" onChange={countryHandler} value={country} defaultValue='' />
             <input type="text" placeholder="Enter City" onChange={cityHandler} value={city} defaultValue='' />
             <button onClick={(e) => {
 
@@ -114,9 +114,9 @@ const App = () => {
           </form>
         </div>
         <Weather name1={updatedLoc.cityx} name2={updatedLoc.countryx} weatherx={icons} temp={{ x: Temp, y: maxTemp, z: minTemp, m: dec }} />
+            <span>Developer|codebloded</span>
       </div>
-
-
+          
     </>
   );
 };
