@@ -6,19 +6,20 @@ const Weather = (props)=>{
         <React.Fragment>
             <div className="temp">
                 <div>
-                    <h1>London, UK</h1>
+                <h1>{props.name2}, {props.name1}</h1>
                     </div>
                 <h1>
-                    <i className="wi wi-day-rain display-1"></i>
+                    <i className={props.weatherx}></i>
                 </h1>
                 <div >
-                    <h1>23&deg;c</h1>
+                    <h1>{props.temp.x}&deg;c</h1>
                 </div>
                 <div className="max-min" >
-                    <h1>18&deg;c</h1>
-                    <h1>21&deg;c</h1>
+    <h1>{props.temp.y}&deg;c</h1>
+    <h1>{props.temp.z}&deg;c</h1>
                 </div>
-                <div>Light weather and sunny </div>
+                <h3>{props.temp.m} </h3>
+                
             </div>
 
         </React.Fragment>
