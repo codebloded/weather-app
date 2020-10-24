@@ -6,7 +6,7 @@ const Weather = (props)=>{
         <React.Fragment>
             <div className="temp">
                 <div>
-                <h1>{props.name2}, {props.name1}</h1>
+                <h1>{props.name2}</h1>
                     </div>
                 <h1>
                     <i className={props.weatherx}></i>

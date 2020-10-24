@@ -5,10 +5,9 @@
     box-shadow: black;
     filter:drop-shadow(6px 7px 16px black);
     width: 50%;
+    height: max-content;
     margin: auto;
-    height: 70vh;
    
-    padding: 22px 30px 12px 30px;
     display: flex;
     flex-direction: column;
     justify-items: center;
